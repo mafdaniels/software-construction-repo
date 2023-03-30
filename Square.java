@@ -17,10 +17,24 @@ public class Square {
         this.side = side;
     }
 
-    // calculates area
-    public double area(double side){
+    // calculates and returns area of the square
+    public double area(){
         double area = side * side;
         return area;
     }
+
+    // calcultes and returns perimeter of the square
+    public double perimeter(){
+        double perimeter = side + side + side + side;
+        return perimeter;
+    }
+
+    // Scanner console = new Scanner(System.in);
+        
+    // System.out.print("Enter side of the square: ");
+    // double squareSide = console.nextDouble();
+    // Square square = new Square(squareSide);
+    // double squareArea = square.area();
+    // System.out.println("The area of square is " + squareArea);
     
 }
