@@ -1,1 +1,1 @@
-# software-construction-repo
+# This is a Java program that defines classes for three types of shapes: Square, Rectangle, and Circle, with methods to calculate their area and perimeter.
