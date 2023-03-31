@@ -1,8 +1,17 @@
-public class IRectangle {
+public class IRectangle extends Shape {
     double length;
     double width;
+    String position;
+
+    public IRectangle(double length, double width, String position){
+        super(position);
+        this.length = length;
+        this.width = width;
+        this.position = position;
+    }
 
     public IRectangle(double length, double width){
+        super(null);
         this.length = length;
         this.width = width;
     }
@@ -30,4 +39,14 @@ public class IRectangle {
     public double perimeter(){
         return length + width + length + width;
     }
+
+      // says if shape has position
+      public String containsPosition() {
+        if(this.position == null){
+            return "shape has no position";
+        }
+        
+        return "position of shape is " + this.position;
+    }
+
 }
