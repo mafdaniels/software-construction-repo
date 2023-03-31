@@ -1,25 +1,27 @@
 public class Circle extends Shape{
     // fields
+    // String position = setLocation(position.Center);
+    
+    double radius;
     public static final double PI = 3.142;
-    double diameter;
 
-    public Circle(double diameter){
-        this.diameter = diameter;
+    public Circle(double radius){
+        this.radius = radius;
     }
 
-    public double getDiameter(){
-        return this.diameter;
+    public double getRadius(){
+        return this.radius;
     }
 
-    public void setDiameter(double diameter){
-        this.diameter = diameter;
+    public void setDiameter(double radius){
+        this.radius = radius;
     }
 
     public double area(){
-        return PI*((1/2)*diameter)*((1/2)*diameter);
+        return PI*radius*radius;
     } 
 
     public double perimeter(){
-        return PI*diameter;
+        return 2*PI*radius;
     }
 }
